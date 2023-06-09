@@ -1,0 +1,182 @@
+<html>
+<title> internship moments </title>
+<head><link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<!-----put pictures/videos of processing materials------>
+
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<a name="intern.html"></a>
+
+
+<ul>
+  <li><a href="index.html">Who am I?</a></li>
+  <li><a href="achievements.html">Achievements</a></li>
+  <li><a href="intern.html">Intern</a></li>
+  <li><a href="hobbies.html">Hobbies</a></li>
+  <li><a href="friends.html">My Friends</a></li>
+<li><a href="hakken.html">who i admire?</a></li>
+</ul>
+</style>
+
+
+<!----SLIDESHOW---->
+
+<!-- Slideshow container -->
+
+<br><br><br><br>
+<center>
+
+<i><font size="20px" color="white">INTERNSHIP SLIDES~</font></i>
+<br>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  
+<div class="mySlides fade">
+    
+<img src="MEDIA\picture2.jpg" style="width:100%">
+    
+<div class="text"> <b><font color="blue">FIRST DAY!! </div></font></b>
+  </div>
+<div class="mySlides fade">
+   
+    
+<img src="MEDIA\picture3.jpg" style="width:100%">
+    
+<div class="text"> <b><font color="blue">HAVING FUN AT THE SOUND STUDIO </div></font></b>
+</div>
+
+  <div class="mySlides fade">
+    
+<img src="MEDIA\picture4.jpg" style="width:100%">
+    
+<div class="text">  <b><font color="blue">
+LAST DAY AT PPAS
+  </div></font></b>
+
+</center>
+
+<!-- Next and previous buttons -->
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+ 
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br><br><br><br>
+
+<hr style="height:10px;border-width:0;color:black;background-color:gray">
+
+<!-----video intern------>
+
+
+<br><br><br><br>
+
+
+<center>
+<i><font size="20px" color="white">INTERNSHIP BLOOPERS</font></i>
+<br><br><br><br>
+
+<i><font size="10px" color="white">Processing materials
+</font></i>
+<br>
+
+<video width="500" height="340" autoplay muted>
+  <source src="MEDIA\video1.mp4" type="video/mp4">
+</video>
+<br><br><br><br>
+
+<hr style="height:15px;border-width:0;color:black;background-color:gray">
+
+
+
+<br><br><br><br>
+<footer>
+<p><center><b>Copyright &copy; maize.com </p><center><b>
+
+
+
+
+<br><br><br><br>
+
+
+<hr style="height:15px;border-width:0;color:black;background-color:gray">
+</center>
+<br><br>
+
+<a href="#intern.html">
+<img src="MEDIA\picture13.jpg" width="100px" align="right">
+</a>
+
+
+
+
+
+</body>
+
+</html>
